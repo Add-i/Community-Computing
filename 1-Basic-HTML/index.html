@@ -1,7 +1,26 @@
 <!DOCTYPE html>
 
-  <head>
 
+
+  <head>
+    <style>
+  #myHeader {
+    background-color: #e6f7ff;
+    color: #000000;
+    padding: 40px;
+    text-align: center;
+  }
+  h3{
+    font-family:courier;
+    border: 1px solid #006699;
+  }
+  h1{font-family: cursive;
+
+  border: 1px solid #006699;
+}
+  }
+
+  </style>
     <title>HTML Basic</title>
 
     <script src="libraries/p5.js"></script>
@@ -10,7 +29,21 @@
   </head>
 
   <body>
-<h1> Hi </h1>
+    <button onclick="myFunction()">Hide elements</button>
+
+
+<h1 class= "header" id= "myHeader" > Community Computing PPP<h1>
+<h3>Welcome! </h3>
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("header");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+
 
 
   </body>
