@@ -4,22 +4,28 @@
 
   <head>
     <style>
+    #myHeader2{
+      text-align: center;
+    }
   #myHeader {
-    background-color: #e6f7ff;
+    background-color:#FFF2C0;
     color: #000000;
     padding: 40px;
     text-align: center;
   }
-  h3{
-    font-family:courier;
-    border: 1px solid #006699;
+  #myTitles{
+    text-align: center;
+    text-decoration: underline;
   }
   h1{font-family: cursive;
 
-  border: 1px solid #006699;
+  border: 1px solid #000000;
 }
   }
 
+  h6{
+    margin-top:5px;
+  }
   </style>
     <title>HTML Basic</title>
 
@@ -29,24 +35,16 @@
   </head>
 
   <body>
-    <button onclick="myFunction()">Hide elements</button>
 
 
-<h1 class= "header" id= "myHeader" > Community Computing PPP<h1>
-<h3>Welcome! </h3>
-<script>
-function myFunction() {
-  var x = document.getElementsByClassName("header");
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-}
-</script>
-
-
-
-
-  </body>
+<h1 class= "header" id= "myHeader" > Community Computing PPP</h1>
+<h2 id= 'myHeader2'>Do you want any sort of software, but don't know how to make it? We can help! </h2>
+<img src= "Screen-Shot.png" alt= "Last year's online sandwich form">
+<h6> Last year's online sandwich form </h6>
+<h2 id='myTitles'> Who We Are:</h2>
+<h3> We are the Community Computing students. We solicit feedback from various members of the LWHS community and work to build applications to fulfil your needs.</h3>
+<h2 id='myTitles'>  How to Reach Us</h2>
+<h3> Fill out this form. <a href= "https://forms.gle/nJsJaoCkeVQUsaP49"> Community Computing PPP Form</a></h3> 
 
 
 
